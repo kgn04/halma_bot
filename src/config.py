@@ -1,17 +1,17 @@
 from typing import Final
 
-import algorithms
-import position_rating
+from src import algorithms
+from src import position_rating
 
 TEAM_CONFIG: Final[dict[str, dict[str, ...]]] = {
     "1": {
-        "algorithm": algorithms.minimax,
-        "distance_function": position_rating.chebyshev_distance,
+        "algorithm": algorithms.alpha_beta_pruning,
+        "distance_function": position_rating.euclidean_distance,
         "color": "purple",
     },
     "2": {
-        "algorithm": algorithms.minimax,
-        "distance_function": position_rating.chebyshev_distance,
+        "algorithm": algorithms.alpha_beta_pruning,
+        "distance_function": position_rating.euclidean_distance,
         "color": "blue",
     },
     "0": {
