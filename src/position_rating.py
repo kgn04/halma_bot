@@ -1,7 +1,7 @@
 from math import sqrt
 from typing import Callable, Final
 
-from src import config
+from src import constants
 
 TARGET_INDEXES: Final[list[tuple[int, int]]] = [
     (x, y) for x in range(5) for y in range(5) if x + y <= 5
@@ -18,7 +18,7 @@ def rate_position(
     in_target_2 = sum(
         3
         for x, y in TARGET_INDEXES
-        if board[config.BOARD_SIZE - 1 - x][config.BOARD_SIZE - 1 - y] == "2"
+        if board[constants.BOARD_SIZE - 1 - x][constants.BOARD_SIZE - 1 - y] == "2"
     )
     if in_target_2 == 19:
         return float("-inf")
@@ -30,7 +30,7 @@ def rate_position(
                 rating -= distance_function((x, y), (0, 0))
             elif board[x][y] == "2":
                 rating += distance_function(
-                    (x, y), (config.BOARD_SIZE - 1, config.BOARD_SIZE - 1)
+                    (x, y), (constants.BOARD_SIZE - 1, constants.BOARD_SIZE - 1)
                 )
     rating += in_target_1
     rating -= in_target_2

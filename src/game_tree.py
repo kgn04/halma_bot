@@ -3,7 +3,7 @@ import copy
 from rich.table import Table
 from typing import Generator
 
-from src import config
+from src import constants
 
 
 class PositionNode:
@@ -29,8 +29,8 @@ class PositionNode:
                     if self.board[i][j] == "1":
                         count_1 += 1
                     if (
-                        self.board[config.BOARD_SIZE - 1 - i][
-                            config.BOARD_SIZE - 1 - j
+                        self.board[constants.BOARD_SIZE - 1 - i][
+                            constants.BOARD_SIZE - 1 - j
                         ]
                         == "2"
                     ):
@@ -43,7 +43,7 @@ class PositionNode:
         for i, row in enumerate(self.board):
             new_row: list[str] = []
             for j, x in enumerate(row):
-                color: str = config.TEAM_CONFIG[x]["color"]
+                color: str = constants.COLOR[x]
                 x = " " if x == "0" else x
                 if self.last_move:
                     color = (
@@ -88,14 +88,14 @@ class PositionNode:
 
     @property
     def new_children(self) -> Generator["PositionNode", None, None]:
-        for x in range(config.BOARD_SIZE):
-            for y in range(config.BOARD_SIZE):
+        for x in range(constants.BOARD_SIZE):
+            for y in range(constants.BOARD_SIZE):
                 if self.board[x][y] == self.to_move:
-                    for dx, dy in config.MOVEMENT_VECTORS:
+                    for dx, dy in constants.MOVEMENT_VECTORS:
                         new_x, new_y = x + dx, y + dy
                         if (
-                            0 <= new_x < config.BOARD_SIZE
-                            and 0 <= new_y < config.BOARD_SIZE
+                            0 <= new_x < constants.BOARD_SIZE
+                            and 0 <= new_y < constants.BOARD_SIZE
                             and self.board[new_x][new_y] == "0"
                         ):
                             new_position = self.new_position(
@@ -109,11 +109,11 @@ class PositionNode:
     def find_jump_move(
         self, x: int, y: int, position: list[list[str]]
     ) -> Generator["PositionNode", None, None]:
-        for dx, dy in config.MOVEMENT_VECTORS:
+        for dx, dy in constants.MOVEMENT_VECTORS:
             new_x, new_y = x + 2 * dx, y + 2 * dy
             if (
-                0 <= new_x < config.BOARD_SIZE
-                and 0 <= new_y < config.BOARD_SIZE
+                0 <= new_x < constants.BOARD_SIZE
+                and 0 <= new_y < constants.BOARD_SIZE
                 and self.board[x + dx][y + dy] != "0"
                 and self.board[new_x][new_y] == "0"
             ):
@@ -125,4 +125,7 @@ class PositionNode:
     def find_child_with_rating(
         self, rating: int
     ) -> "PositionNode":  # TODO: randomize
+        print("cr: ", rating)
+        for c in self.children:
+            print(c.rating)
         return next(child for child in self.children if child.rating == rating)
