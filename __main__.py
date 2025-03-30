@@ -4,10 +4,7 @@ from collections import deque
 from rich import print
 from typing import Callable, Final
 
-from src import constants
-from src import position_rating
-from src.algorithm import minimax
-from src.game_tree import PositionNode
+from src import constants, minimax, position_rating, PositionNode
 
 DISTANCE_FUNCTION_MAPPING: Final[dict[str, Callable]] = {
     "manhattan": position_rating.manhattan_distance,
@@ -28,7 +25,7 @@ def _parse_arguments() -> argparse.Namespace:
         "-p",
         "--position",
         type=int,
-        help="position id from 'poitions' directory (1..101)",
+        help="position id from 'positions' directory (1..101)",
         default=1,
     )
     parser.add_argument(
@@ -37,6 +34,12 @@ def _parse_arguments() -> argparse.Namespace:
         type=int,
         help="max game tree depth",
         required=True,
+    )
+    parser.add_argument(
+        "-rl",
+        "--rounds-limit",
+        type=int,
+        help="draw after playing that many rounds",
     )
     for i in range(1, 3):
         parser.add_argument(
@@ -55,8 +58,7 @@ def _parse_arguments() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def main() -> None:
-    arguments = _parse_arguments()
+def main(arguments: argparse.Namespace) -> tuple[str, int]:
     with open(f"positions/pos{arguments.position}.txt") as position_file:
         current_position = PositionNode(
             [line[:-1].split(" ") for line in position_file], "1"
@@ -65,7 +67,8 @@ def main() -> None:
     rounds_count: int = 0
 
     while current_position.winner == "0":
-        to_move = "1" if rounds_count % 2 == 0 else "2"
+        rounds_count += 1
+        to_move = "1" if rounds_count % 2 == 1 else "2"
         rating: int | float = minimax(
             position=current_position,
             to_move=to_move,
@@ -85,16 +88,27 @@ def main() -> None:
                 else "2" if current_position.rating < 0 else "0"
             )
             print(
-                f"RATING: [{constants.COLOR[winning]}]{current_position.rating}\n"
+                f"Rating: [{constants.COLOR[winning]}]{current_position.rating}[/]\n"
+                f" Round: {rounds_count}\n"
             )
         if last_positions.count(current_position.board) == 2:
-            print("[cyan]Position repeated 3 times. It's a draw.")
-            return
+            print("[cyan]Position repeated 3 times.")
+            return "0", rounds_count
         last_positions.append(current_position.board)
-        rounds_count += 1
+        if (
+            arguments.rounds_limit is not None
+            and rounds_count == arguments.rounds_limit
+        ):
+            print("[cyan]Rounds limit reached.")
+            return "0", rounds_count
 
-    print(f"[cyan]Player {current_position.winner} won after {rounds_count} rounds.")
+    return current_position.winner, rounds_count
 
 
 if __name__ == "__main__":
-    main()
+    positional_arguments: argparse.Namespace = _parse_arguments()
+    winner, rounds = main(positional_arguments)
+    if winner == "0":
+        print(f"[cyan]Draw after {rounds} rounds.")
+    else:
+        print(f"[cyan]Player {winner} won after {rounds} rounds.")

@@ -1,10 +1,10 @@
 from random import shuffle
 
 # starting position
-with open("positions/pos1.txt") as pos1:
+with open("../positions/pos1.txt") as pos1:
     position = [line[:-1].split(" ") for line in pos1]
 
-# position variations
+# mid-game positions
 for i in range(99):
     to_write = ""
     shuffle(position)

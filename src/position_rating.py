@@ -11,12 +11,12 @@ TARGET_INDEXES: Final[list[tuple[int, int]]] = [
 def rate_position(
     board: list[list[str]], distance_function: Callable
 ) -> int | float:  # TODO: make it more complex
-    in_target_1 = sum(3 for x, y in TARGET_INDEXES if board[x][y] == "1")
+    in_target_1 = sum(1 for x, y in TARGET_INDEXES if board[x][y] == "1")
     if in_target_1 == 19:
         return float("inf")
 
     in_target_2 = sum(
-        3
+        1
         for x, y in TARGET_INDEXES
         if board[constants.BOARD_SIZE - 1 - x][constants.BOARD_SIZE - 1 - y]
         == "2"
@@ -25,15 +25,15 @@ def rate_position(
         return float("-inf")
 
     rating: int = 0
+    opposite_corner = (constants.BOARD_SIZE - 1, constants.BOARD_SIZE - 1)
     for x in range(16):
         for y in range(16):
             if board[x][y] == "1":
                 rating -= distance_function((x, y), (0, 0))
+                rating += distance_function((x, y), opposite_corner)
             elif board[x][y] == "2":
-                rating += distance_function(
-                    (x, y),
-                    (constants.BOARD_SIZE - 1, constants.BOARD_SIZE - 1),
-                )
+                rating += distance_function((x, y), opposite_corner)
+                rating -= distance_function((x, y), (0, 0))
     rating += in_target_1
     rating -= in_target_2
     return rating

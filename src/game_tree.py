@@ -1,11 +1,12 @@
 import copy
-import sys
 
 from random import shuffle
 from rich.table import Table
 from typing import Generator
 
 from src import constants
+
+__all__ = ["PositionNode"]
 
 
 class PositionNode:
@@ -58,18 +59,18 @@ class PositionNode:
             table.add_row(*new_row)
         return table
 
-    def new_position(
+    def new_position_board(
         self,
-        position: list[list[str]],
+        board: list[list[str]],
         old_x: int,
         old_y: int,
         new_x: int,
         new_y: int,
     ) -> list[list[str]]:
-        new_position = copy.deepcopy(position)
-        new_position[new_x][new_y] = self._to_move
-        new_position[old_x][old_y] = "0"
-        return new_position
+        new_position_board = copy.deepcopy(board)
+        new_position_board[new_x][new_y] = self._to_move
+        new_position_board[old_x][old_y] = "0"
+        return new_position_board
 
     def add_new_child(
         self,
@@ -100,13 +101,13 @@ class PositionNode:
                             and 0 <= new_y < constants.BOARD_SIZE
                             and self.board[new_x][new_y] == "0"
                         ):
-                            new_position = self.new_position(
+                            new_position = self.new_position_board(
                                 self.board, x, y, new_x, new_y
                             )
                             yield self.add_new_child(
                                 new_position, x, y, new_x, new_y
                             )
-                    yield from self.find_jump_move(x, y, self.board)
+                    # yield from self.find_jump_move(x, y, self.board)
 
     def find_jump_move(
         self, x: int, y: int, position: list[list[str]]
@@ -119,21 +120,17 @@ class PositionNode:
                 and self.board[x + dx][y + dy] != "0"
                 and self.board[new_x][new_y] == "0"
             ):
-                new_position = self.new_position(position, x, y, new_x, new_y)
+                new_position = self.new_position_board(
+                    position, x, y, new_x, new_y
+                )
                 if new_position not in self._children_positions:
                     yield self.add_new_child(new_position, x, y, new_x, new_y)
                     yield from self.find_jump_move(new_x, new_y, new_position)
 
-    def find_child_with_rating(
-        self, rating: int
-    ) -> "PositionNode":  # TODO: randomize
+    def find_child_with_rating(self, rating: int) -> "PositionNode":
         shuffle(self._children)
-        try:
-            return next(
-                child for child in self._children if child.rating == rating
-            )
-        except StopIteration:
-            print("RATING: ", rating)
-            for c in sorted(self._children, key=lambda child: child.rating):
-                print(c.rating, end=" ")
-            sys.exit(1)
+        return next(
+            child
+            for child in self._children
+            if child.rating == rating or child.winner != "0"
+        )

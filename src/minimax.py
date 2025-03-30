@@ -3,6 +3,8 @@ from typing import Callable
 from src.game_tree import PositionNode
 from src.position_rating import rate_position
 
+__all__ = ["minimax"]
+
 
 def minimax(
     position: PositionNode,
