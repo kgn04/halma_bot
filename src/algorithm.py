@@ -1,6 +1,5 @@
 from typing import Callable
 
-from src import constants
 from src.game_tree import PositionNode
 from src.position_rating import rate_position
 
@@ -9,16 +8,14 @@ def minimax(
     position: PositionNode,
     to_move: str,
     distance_function: Callable,
+    depth: int,
     max_depth: int,
-    pruning: bool = False,
-    depth: int = 0,
+    pruning: bool,
     alpha: float = float("-inf"),
     beta: float = float("inf"),
 ) -> int:
     if depth == max_depth or position.winner != "0":
-        return rate_position(
-            position.board, distance_function
-        )
+        return rate_position(position.board, distance_function)
 
     extreme_value = float("-inf") if to_move == "1" else float("inf")
     extreme_function = max if to_move == "1" else min
@@ -30,8 +27,8 @@ def minimax(
                 position=child,
                 to_move="2" if to_move == "1" else "1",
                 distance_function=distance_function,
-                max_depth=max_depth,
                 depth=depth + 1,
+                max_depth=max_depth,
                 pruning=pruning,
                 alpha=alpha,
                 beta=beta,

@@ -1,5 +1,7 @@
 import copy
+import sys
 
+from random import shuffle
 from rich.table import Table
 from typing import Generator
 
@@ -14,11 +16,11 @@ class PositionNode:
         last_move: tuple[tuple[int, int], tuple[int, int]] = None,
     ):
         self.board: list[list[str]] = board
-        self.to_move: str = to_move
-        self.children: list[PositionNode] = []
-        self.children_positions: list[list[list[str]]] = []
         self.rating: int | float = 0.0
-        self.last_move: tuple[tuple[int, int], tuple[int, int]] = last_move
+        self._to_move: str = to_move
+        self._children: list[PositionNode] = []
+        self._children_positions: list[list[list[str]]] = []
+        self._last_move: tuple[tuple[int, int], tuple[int, int]] = last_move
 
     @property
     def winner(self) -> str:
@@ -45,11 +47,11 @@ class PositionNode:
             for j, x in enumerate(row):
                 color: str = constants.COLOR[x]
                 x = " " if x == "0" else x
-                if self.last_move:
+                if self._last_move:
                     color = (
                         "green"
-                        if (i, j) == self.last_move[1]
-                        else "red" if (i, j) == self.last_move[0] else color
+                        if (i, j) == self._last_move[1]
+                        else "red" if (i, j) == self._last_move[0] else color
                     )
                     x = "X" if color == "red" else x
                 new_row.append(f"[bold {color}]{x}[/]")
@@ -65,7 +67,7 @@ class PositionNode:
         new_y: int,
     ) -> list[list[str]]:
         new_position = copy.deepcopy(position)
-        new_position[new_x][new_y] = self.to_move
+        new_position[new_x][new_y] = self._to_move
         new_position[old_x][old_y] = "0"
         return new_position
 
@@ -79,18 +81,18 @@ class PositionNode:
     ) -> "PositionNode":
         new_child = PositionNode(
             position,
-            to_move="1" if self.to_move == "2" else "2",
+            to_move="1" if self._to_move == "2" else "2",
             last_move=((old_x, old_y), (new_x, new_y)),
         )
-        self.children.append(new_child)
-        self.children_positions.append(position)
+        self._children.append(new_child)
+        self._children_positions.append(position)
         return new_child
 
     @property
     def new_children(self) -> Generator["PositionNode", None, None]:
         for x in range(constants.BOARD_SIZE):
             for y in range(constants.BOARD_SIZE):
-                if self.board[x][y] == self.to_move:
+                if self.board[x][y] == self._to_move:
                     for dx, dy in constants.MOVEMENT_VECTORS:
                         new_x, new_y = x + dx, y + dy
                         if (
@@ -104,7 +106,7 @@ class PositionNode:
                             yield self.add_new_child(
                                 new_position, x, y, new_x, new_y
                             )
-                    # yield from self.find_jump_move(x, y, self.board)  # TODO: make jumping work
+                    yield from self.find_jump_move(x, y, self.board)
 
     def find_jump_move(
         self, x: int, y: int, position: list[list[str]]
@@ -118,14 +120,20 @@ class PositionNode:
                 and self.board[new_x][new_y] == "0"
             ):
                 new_position = self.new_position(position, x, y, new_x, new_y)
-                if new_position not in self.children_positions:
+                if new_position not in self._children_positions:
                     yield self.add_new_child(new_position, x, y, new_x, new_y)
                     yield from self.find_jump_move(new_x, new_y, new_position)
 
     def find_child_with_rating(
         self, rating: int
     ) -> "PositionNode":  # TODO: randomize
-        print("cr: ", rating)
-        for c in self.children:
-            print(c.rating)
-        return next(child for child in self.children if child.rating == rating)
+        shuffle(self._children)
+        try:
+            return next(
+                child for child in self._children if child.rating == rating
+            )
+        except StopIteration:
+            print("RATING: ", rating)
+            for c in sorted(self._children, key=lambda child: child.rating):
+                print(c.rating, end=" ")
+            sys.exit(1)
