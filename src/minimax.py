@@ -19,15 +19,16 @@ def minimax(
     if depth == max_depth or position.winner != "0":
         return rate_position(position.board, distance_function)
 
-    extreme_value = float("-inf") if to_move == "1" else float("inf")
-    extreme_function = max if to_move == "1" else min
+    maximizing: bool = to_move == "1"
+    extreme_value = float("-inf") if maximizing else float("inf")
+    extreme_function = max if maximizing else min
 
-    for child in position.new_children:
+    for child in position.children:
         extreme_value = extreme_function(
             extreme_value,
             minimax(
                 position=child,
-                to_move="2" if to_move == "1" else "1",
+                to_move="2" if maximizing else "1",
                 distance_function=distance_function,
                 depth=depth + 1,
                 max_depth=max_depth,
@@ -37,7 +38,7 @@ def minimax(
             ),
         )
         if pruning:
-            if to_move == "1":
+            if maximizing:
                 alpha = max(alpha, extreme_value)
             else:
                 beta = min(beta, extreme_value)
