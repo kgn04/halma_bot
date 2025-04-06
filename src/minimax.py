@@ -5,6 +5,8 @@ from src.position_rating import rate_position
 
 __all__ = ["minimax"]
 
+NODES_VISITED: int = 0
+
 
 def minimax(
     position: PositionNode,
@@ -16,6 +18,9 @@ def minimax(
     alpha: float = float("-inf"),
     beta: float = float("inf"),
 ) -> int:
+    global NODES_VISITED
+    NODES_VISITED += 1
+
     if depth == max_depth or position.winner != "0":
         return rate_position(position.board, distance_function)
 

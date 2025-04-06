@@ -1,0 +1,669 @@
+[22:03:03.173] 1 - distance_function chebyshev - pruning True
+[22:03:03.173] 2 - distance_function manhattan - pruning True
+[22:03:03.174] START to_move 1
+[22:03:03.239] STOP to_move 1 nodes_visited 1001
+[22:03:03.239] START to_move 2
+[22:03:03.288] STOP to_move 2 nodes_visited 843
+[22:03:03.289] START to_move 1
+[22:03:03.460] STOP to_move 1 nodes_visited 2582
+[22:03:03.462] START to_move 2
+[22:03:03.525] STOP to_move 2 nodes_visited 1090
+[22:03:03.525] START to_move 1
+[22:03:03.628] STOP to_move 1 nodes_visited 1659
+[22:03:03.629] START to_move 2
+[22:03:03.663] STOP to_move 2 nodes_visited 597
+[22:03:03.664] START to_move 1
+[22:03:03.723] STOP to_move 1 nodes_visited 945
+[22:03:03.723] START to_move 2
+[22:03:03.753] STOP to_move 2 nodes_visited 530
+[22:03:03.753] START to_move 1
+[22:03:03.776] STOP to_move 1 nodes_visited 391
+[22:03:03.776] START to_move 2
+[22:03:03.823] STOP to_move 2 nodes_visited 808
+[22:03:03.823] START to_move 1
+[22:03:03.845] STOP to_move 1 nodes_visited 379
+[22:03:03.845] START to_move 2
+[22:03:03.962] STOP to_move 2 nodes_visited 1976
+[22:03:03.963] START to_move 1
+[22:03:03.986] STOP to_move 1 nodes_visited 382
+[22:03:03.986] START to_move 2
+[22:03:04.033] STOP to_move 2 nodes_visited 824
+[22:03:04.034] START to_move 1
+[22:03:04.055] STOP to_move 1 nodes_visited 378
+[22:03:04.056] START to_move 2
+[22:03:04.104] STOP to_move 2 nodes_visited 848
+[22:03:04.104] START to_move 1
+[22:03:04.126] STOP to_move 1 nodes_visited 370
+[22:03:04.126] START to_move 2
+[22:03:04.320] STOP to_move 2 nodes_visited 3295
+[22:03:04.322] START to_move 1
+[22:03:04.345] STOP to_move 1 nodes_visited 409
+[22:03:04.346] START to_move 2
+[22:03:04.549] STOP to_move 2 nodes_visited 3447
+[22:03:04.552] START to_move 1
+[22:03:04.694] STOP to_move 1 nodes_visited 2250
+[22:03:04.695] START to_move 2
+[22:03:04.904] STOP to_move 2 nodes_visited 3558
+[22:03:04.906] START to_move 1
+[22:03:04.925] STOP to_move 1 nodes_visited 307
+[22:03:04.925] START to_move 2
+[22:03:05.115] STOP to_move 2 nodes_visited 3230
+[22:03:05.117] START to_move 1
+[22:03:05.276] STOP to_move 1 nodes_visited 2515
+[22:03:05.278] START to_move 2
+[22:03:05.461] STOP to_move 2 nodes_visited 3124
+[22:03:05.463] START to_move 1
+[22:03:05.666] STOP to_move 1 nodes_visited 3161
+[22:03:05.668] START to_move 2
+[22:03:05.777] STOP to_move 2 nodes_visited 1827
+[22:03:05.778] START to_move 1
+[22:03:05.991] STOP to_move 1 nodes_visited 3340
+[22:03:05.993] START to_move 2
+[22:03:06.062] STOP to_move 2 nodes_visited 1159
+[22:03:06.062] START to_move 1
+[22:03:06.277] STOP to_move 1 nodes_visited 3311
+[22:03:06.279] START to_move 2
+[22:03:06.346] STOP to_move 2 nodes_visited 1156
+[22:03:06.347] START to_move 1
+[22:03:06.482] STOP to_move 1 nodes_visited 2163
+[22:03:06.483] START to_move 2
+[22:03:06.544] STOP to_move 2 nodes_visited 1022
+[22:03:06.544] START to_move 1
+[22:03:06.584] STOP to_move 1 nodes_visited 652
+[22:03:06.584] START to_move 2
+[22:03:06.684] STOP to_move 2 nodes_visited 1729
+[22:03:06.685] START to_move 1
+[22:03:06.723] STOP to_move 1 nodes_visited 627
+[22:03:06.723] START to_move 2
+[22:03:06.825] STOP to_move 2 nodes_visited 1733
+[22:03:06.826] START to_move 1
+[22:03:07.013] STOP to_move 1 nodes_visited 2867
+[22:03:07.014] START to_move 2
+[22:03:07.447] STOP to_move 2 nodes_visited 7031
+[22:03:07.451] START to_move 1
+[22:03:07.620] STOP to_move 1 nodes_visited 2540
+[22:03:07.621] START to_move 2
+[22:03:08.035] STOP to_move 2 nodes_visited 6825
+[22:03:08.039] START to_move 1
+[22:03:08.079] STOP to_move 1 nodes_visited 645
+[22:03:08.079] START to_move 2
+[22:03:08.518] STOP to_move 2 nodes_visited 7212
+[22:03:08.523] START to_move 1
+[22:03:08.573] STOP to_move 1 nodes_visited 813
+[22:03:08.573] START to_move 2
+[22:03:08.943] STOP to_move 2 nodes_visited 6046
+[22:03:08.946] START to_move 1
+[22:03:09.000] STOP to_move 1 nodes_visited 869
+[22:03:09.000] START to_move 2
+[22:03:09.186] STOP to_move 2 nodes_visited 3055
+[22:03:09.188] START to_move 1
+[22:03:09.268] STOP to_move 1 nodes_visited 1286
+[22:03:09.269] START to_move 2
+[22:03:09.469] STOP to_move 2 nodes_visited 3324
+[22:03:09.471] START to_move 1
+[22:03:09.594] STOP to_move 1 nodes_visited 1942
+[22:03:09.595] START to_move 2
+[22:03:09.742] STOP to_move 2 nodes_visited 2426
+[22:03:09.743] START to_move 1
+[22:03:09.925] STOP to_move 1 nodes_visited 2764
+[22:03:09.926] START to_move 2
+[22:03:10.110] STOP to_move 2 nodes_visited 2898
+[22:03:10.111] START to_move 1
+[22:03:10.294] STOP to_move 1 nodes_visited 2807
+[22:03:10.295] START to_move 2
+[22:03:10.447] STOP to_move 2 nodes_visited 2463
+[22:03:10.449] START to_move 1
+[22:03:10.535] STOP to_move 1 nodes_visited 1342
+[22:03:10.536] START to_move 2
+[22:03:10.624] STOP to_move 2 nodes_visited 1481
+[22:03:10.625] START to_move 1
+[22:03:10.698] STOP to_move 1 nodes_visited 1185
+[22:03:10.699] START to_move 2
+[22:03:10.819] STOP to_move 2 nodes_visited 1977
+[22:03:10.821] START to_move 1
+[22:03:10.864] STOP to_move 1 nodes_visited 716
+[22:03:10.865] START to_move 2
+[22:03:10.984] STOP to_move 2 nodes_visited 1969
+[22:03:10.985] START to_move 1
+[22:03:11.030] STOP to_move 1 nodes_visited 720
+[22:03:11.031] START to_move 2
+[22:03:11.234] STOP to_move 2 nodes_visited 3501
+[22:03:11.236] START to_move 1
+[22:03:11.309] STOP to_move 1 nodes_visited 1160
+[22:03:11.310] START to_move 2
+[22:03:11.470] STOP to_move 2 nodes_visited 2779
+[22:03:11.472] START to_move 1
+[22:03:11.548] STOP to_move 1 nodes_visited 1207
+[22:03:11.548] START to_move 2
+[22:03:11.780] STOP to_move 2 nodes_visited 3917
+[22:03:11.782] START to_move 1
+[22:03:11.836] STOP to_move 1 nodes_visited 866
+[22:03:11.836] START to_move 2
+[22:03:12.077] STOP to_move 2 nodes_visited 4066
+[22:03:12.079] START to_move 1
+[22:03:12.189] STOP to_move 1 nodes_visited 1698
+[22:03:12.190] START to_move 2
+[22:03:12.278] STOP to_move 2 nodes_visited 1489
+[22:03:12.279] START to_move 1
+[22:03:12.399] STOP to_move 1 nodes_visited 1869
+[22:03:12.400] START to_move 2
+[22:03:12.486] STOP to_move 2 nodes_visited 1486
+[22:03:12.487] START to_move 1
+[22:03:12.668] STOP to_move 1 nodes_visited 2836
+[22:03:12.669] START to_move 2
+[22:03:12.876] STOP to_move 2 nodes_visited 3456
+[22:03:12.879] START to_move 1
+[22:03:13.032] STOP to_move 1 nodes_visited 2429
+[22:03:13.034] START to_move 2
+[22:03:13.206] STOP to_move 2 nodes_visited 2863
+[22:03:13.208] START to_move 1
+[22:03:13.403] STOP to_move 1 nodes_visited 3032
+[22:03:13.404] START to_move 2
+[22:03:13.579] STOP to_move 2 nodes_visited 2934
+[22:03:13.581] START to_move 1
+[22:03:13.814] STOP to_move 1 nodes_visited 3685
+[22:03:13.816] START to_move 2
+[22:03:14.003] STOP to_move 2 nodes_visited 3086
+[22:03:14.005] START to_move 1
+[22:03:14.056] STOP to_move 1 nodes_visited 835
+[22:03:14.057] START to_move 2
+[22:03:14.317] STOP to_move 2 nodes_visited 4390
+[22:03:14.320] START to_move 1
+[22:03:14.406] STOP to_move 1 nodes_visited 1353
+[22:03:14.407] START to_move 2
+[22:03:14.684] STOP to_move 2 nodes_visited 4570
+[22:03:14.686] START to_move 1
+[22:03:14.763] STOP to_move 1 nodes_visited 1231
+[22:03:14.764] START to_move 2
+[22:03:14.898] STOP to_move 2 nodes_visited 2226
+[22:03:14.899] START to_move 1
+[22:03:14.955] STOP to_move 1 nodes_visited 911
+[22:03:14.956] START to_move 2
+[22:03:15.015] STOP to_move 2 nodes_visited 1037
+[22:03:15.016] START to_move 1
+[22:03:15.052] STOP to_move 1 nodes_visited 593
+[22:03:15.052] START to_move 2
+[22:03:15.266] STOP to_move 2 nodes_visited 3630
+[22:03:15.269] START to_move 1
+[22:03:15.310] STOP to_move 1 nodes_visited 669
+[22:03:15.310] START to_move 2
+[22:03:15.527] STOP to_move 2 nodes_visited 3620
+[22:03:15.529] START to_move 1
+[22:03:15.559] STOP to_move 1 nodes_visited 501
+[22:03:15.559] START to_move 2
+[22:03:15.767] STOP to_move 2 nodes_visited 3532
+[22:03:15.769] START to_move 1
+[22:03:15.799] STOP to_move 1 nodes_visited 498
+[22:03:15.799] START to_move 2
+[22:03:15.992] STOP to_move 2 nodes_visited 3286
+[22:03:15.993] START to_move 1
+[22:03:16.070] STOP to_move 1 nodes_visited 1217
+[22:03:16.071] START to_move 2
+[22:03:16.289] STOP to_move 2 nodes_visited 3745
+[22:03:16.291] START to_move 1
+[22:03:16.320] STOP to_move 1 nodes_visited 469
+[22:03:16.320] START to_move 2
+[22:03:16.523] STOP to_move 2 nodes_visited 3462
+[22:03:16.525] START to_move 1
+[22:03:16.553] STOP to_move 1 nodes_visited 471
+[22:03:16.553] START to_move 2
+[22:03:16.694] STOP to_move 2 nodes_visited 2376
+[22:03:16.695] START to_move 1
+[22:03:16.733] STOP to_move 1 nodes_visited 635
+[22:03:16.734] START to_move 2
+[22:03:16.775] STOP to_move 2 nodes_visited 722
+[22:03:16.775] START to_move 1
+[22:03:16.803] STOP to_move 1 nodes_visited 465
+[22:03:16.803] START to_move 2
+[22:03:16.844] STOP to_move 2 nodes_visited 718
+[22:03:16.845] START to_move 1
+[22:03:16.873] STOP to_move 1 nodes_visited 469
+[22:03:16.873] START to_move 2
+[22:03:16.914] STOP to_move 2 nodes_visited 718
+[22:03:16.915] START to_move 1
+[22:03:16.945] STOP to_move 1 nodes_visited 469
+[22:03:16.945] START to_move 2
+[22:03:16.985] STOP to_move 2 nodes_visited 713
+[22:03:16.986] START to_move 1
+[22:03:17.014] STOP to_move 1 nodes_visited 470
+[22:03:17.014] START to_move 2
+[22:03:17.207] STOP to_move 2 nodes_visited 3261
+[22:03:17.209] START to_move 1
+[22:03:17.236] STOP to_move 1 nodes_visited 461
+[22:03:17.237] START to_move 2
+[22:03:17.427] STOP to_move 2 nodes_visited 3261
+[22:03:17.429] START to_move 1
+[22:03:17.506] STOP to_move 1 nodes_visited 1225
+[22:03:17.507] START to_move 2
+[22:03:17.617] STOP to_move 2 nodes_visited 1908
+[22:03:17.618] START to_move 1
+[22:03:17.701] STOP to_move 1 nodes_visited 1354
+[22:03:17.702] START to_move 2
+[22:03:17.748] STOP to_move 2 nodes_visited 782
+[22:03:17.748] START to_move 1
+[22:03:17.776] STOP to_move 1 nodes_visited 469
+[22:03:17.777] START to_move 2
+[22:03:17.818] STOP to_move 2 nodes_visited 727
+[22:03:17.819] START to_move 1
+[22:03:17.847] STOP to_move 1 nodes_visited 476
+[22:03:17.847] START to_move 2
+[22:03:17.889] STOP to_move 2 nodes_visited 722
+[22:03:17.889] START to_move 1
+[22:03:17.918] STOP to_move 1 nodes_visited 473
+[22:03:17.918] START to_move 2
+[22:03:17.959] STOP to_move 2 nodes_visited 728
+[22:03:17.960] START to_move 1
+[22:03:18.028] STOP to_move 1 nodes_visited 1078
+[22:03:18.028] START to_move 2
+[22:03:18.062] STOP to_move 2 nodes_visited 602
+[22:03:18.062] START to_move 1
+[22:03:18.089] STOP to_move 1 nodes_visited 453
+[22:03:18.090] START to_move 2
+[22:03:18.131] STOP to_move 2 nodes_visited 731
+[22:03:18.131] START to_move 1
+[22:03:18.157] STOP to_move 1 nodes_visited 443
+[22:03:18.158] START to_move 2
+[22:03:18.198] STOP to_move 2 nodes_visited 703
+[22:03:18.198] START to_move 1
+[22:03:18.246] STOP to_move 1 nodes_visited 777
+[22:03:18.247] START to_move 2
+[22:03:18.287] STOP to_move 2 nodes_visited 693
+[22:03:18.287] START to_move 1
+[22:03:18.313] STOP to_move 1 nodes_visited 423
+[22:03:18.313] START to_move 2
+[22:03:18.351] STOP to_move 2 nodes_visited 675
+[22:03:18.351] START to_move 1
+[22:03:18.380] STOP to_move 1 nodes_visited 481
+[22:03:18.381] START to_move 2
+[22:03:18.416] STOP to_move 2 nodes_visited 619
+[22:03:18.416] START to_move 1
+[22:03:18.443] STOP to_move 1 nodes_visited 446
+[22:03:18.443] START to_move 2
+[22:03:18.500] STOP to_move 2 nodes_visited 996
+[22:03:18.501] START to_move 1
+[22:03:18.561] STOP to_move 1 nodes_visited 955
+[22:03:18.561] START to_move 2
+[22:03:18.597] STOP to_move 2 nodes_visited 624
+[22:03:18.598] START to_move 1
+[22:03:18.685] STOP to_move 1 nodes_visited 1411
+[22:03:18.686] START to_move 2
+[22:03:18.721] STOP to_move 2 nodes_visited 626
+[22:03:18.721] START to_move 1
+[22:03:18.745] STOP to_move 1 nodes_visited 397
+[22:03:18.745] START to_move 2
+[22:03:18.793] STOP to_move 2 nodes_visited 831
+[22:03:18.793] START to_move 1
+[22:03:18.817] STOP to_move 1 nodes_visited 397
+[22:03:18.817] START to_move 2
+[22:03:18.850] STOP to_move 2 nodes_visited 567
+[22:03:18.850] START to_move 1
+[22:03:18.875] STOP to_move 1 nodes_visited 417
+[22:03:18.876] START to_move 2
+[22:03:18.912] STOP to_move 2 nodes_visited 647
+[22:03:18.913] START to_move 1
+[22:03:18.959] STOP to_move 1 nodes_visited 760
+[22:03:18.960] START to_move 2
+[22:03:19.049] STOP to_move 2 nodes_visited 1513
+[22:03:19.049] START to_move 1
+[22:03:19.079] STOP to_move 1 nodes_visited 489
+[22:03:19.079] START to_move 2
+[22:03:19.175] STOP to_move 2 nodes_visited 1612
+[22:03:19.176] START to_move 1
+[22:03:19.205] STOP to_move 1 nodes_visited 493
+[22:03:19.205] START to_move 2
+[22:03:19.293] STOP to_move 2 nodes_visited 1492
+[22:03:19.294] START to_move 1
+[22:03:19.322] STOP to_move 1 nodes_visited 466
+[22:03:19.323] START to_move 2
+[22:03:19.507] STOP to_move 2 nodes_visited 3106
+[22:03:19.509] START to_move 1
+[22:03:19.532] STOP to_move 1 nodes_visited 384
+[22:03:19.532] START to_move 2
+[22:03:19.724] STOP to_move 2 nodes_visited 3216
+[22:03:19.725] START to_move 1
+[22:03:19.748] STOP to_move 1 nodes_visited 384
+[22:03:19.749] START to_move 2
+[22:03:19.938] STOP to_move 2 nodes_visited 3161
+[22:03:19.939] START to_move 1
+[22:03:20.012] STOP to_move 1 nodes_visited 1157
+[22:03:20.012] START to_move 2
+[22:03:20.114] STOP to_move 2 nodes_visited 1732
+[22:03:20.115] START to_move 1
+[22:03:20.187] STOP to_move 1 nodes_visited 1119
+[22:03:20.187] START to_move 2
+[22:03:20.268] STOP to_move 2 nodes_visited 1384
+[22:03:20.269] START to_move 1
+[22:03:20.308] STOP to_move 1 nodes_visited 644
+[22:03:20.309] START to_move 2
+[22:03:20.346] STOP to_move 2 nodes_visited 648
+[22:03:20.347] START to_move 1
+[22:03:20.377] STOP to_move 1 nodes_visited 493
+[22:03:20.377] START to_move 2
+[22:03:20.479] STOP to_move 2 nodes_visited 1700
+[22:03:20.480] START to_move 1
+[22:03:20.505] STOP to_move 1 nodes_visited 425
+[22:03:20.506] START to_move 2
+[22:03:20.625] STOP to_move 2 nodes_visited 1999
+[22:03:20.626] START to_move 1
+[22:03:20.656] STOP to_move 1 nodes_visited 489
+[22:03:20.656] START to_move 2
+[22:03:20.725] STOP to_move 2 nodes_visited 1142
+[22:03:20.726] START to_move 1
+[22:03:20.756] STOP to_move 1 nodes_visited 491
+[22:03:20.756] START to_move 2
+[22:03:20.830] STOP to_move 2 nodes_visited 1279
+[22:03:20.831] START to_move 1
+[22:03:20.860] STOP to_move 1 nodes_visited 481
+[22:03:20.860] START to_move 2
+[22:03:20.928] STOP to_move 2 nodes_visited 1149
+[22:03:20.929] START to_move 1
+[22:03:20.959] STOP to_move 1 nodes_visited 476
+[22:03:20.960] START to_move 2
+[22:03:21.036] STOP to_move 2 nodes_visited 1306
+[22:03:21.036] START to_move 1
+[22:03:21.065] STOP to_move 1 nodes_visited 476
+[22:03:21.065] START to_move 2
+[22:03:21.142] STOP to_move 2 nodes_visited 1306
+[22:03:21.142] START to_move 1
+[22:03:21.168] STOP to_move 1 nodes_visited 413
+[22:03:21.168] START to_move 2
+[22:03:21.247] STOP to_move 2 nodes_visited 1318
+[22:03:21.247] START to_move 1
+[22:03:21.274] STOP to_move 1 nodes_visited 436
+[22:03:21.274] START to_move 2
+[22:03:21.352] STOP to_move 2 nodes_visited 1330
+[22:03:21.353] START to_move 1
+[22:03:21.375] STOP to_move 1 nodes_visited 365
+[22:03:21.375] START to_move 2
+[22:03:21.405] STOP to_move 2 nodes_visited 529
+[22:03:21.406] START to_move 1
+[22:03:21.426] STOP to_move 1 nodes_visited 336
+[22:03:21.426] START to_move 2
+[22:03:21.459] STOP to_move 2 nodes_visited 581
+[22:03:21.460] START to_move 1
+[22:03:21.480] STOP to_move 1 nodes_visited 336
+[22:03:21.480] START to_move 2
+[22:03:21.515] STOP to_move 2 nodes_visited 588
+[22:03:21.516] START to_move 1
+[22:03:21.535] STOP to_move 1 nodes_visited 317
+[22:03:21.535] START to_move 2
+[22:03:21.664] STOP to_move 2 nodes_visited 2205
+[22:03:21.665] START to_move 1
+[22:03:21.684] STOP to_move 1 nodes_visited 305
+[22:03:21.684] START to_move 2
+[22:03:21.711] STOP to_move 2 nodes_visited 481
+[22:03:21.711] START to_move 1
+[22:03:21.730] STOP to_move 1 nodes_visited 307
+[22:03:21.730] START to_move 2
+[22:03:21.819] STOP to_move 2 nodes_visited 1492
+[22:03:21.819] START to_move 1
+[22:03:21.838] STOP to_move 1 nodes_visited 302
+[22:03:21.838] START to_move 2
+[22:03:21.925] STOP to_move 2 nodes_visited 1489
+[22:03:21.925] START to_move 1
+[22:03:21.943] STOP to_move 1 nodes_visited 295
+[22:03:21.943] START to_move 2
+[22:03:22.036] STOP to_move 2 nodes_visited 1547
+[22:03:22.037] START to_move 1
+[22:03:22.065] STOP to_move 1 nodes_visited 460
+[22:03:22.065] START to_move 2
+[22:03:22.087] STOP to_move 2 nodes_visited 389
+[22:03:22.087] START to_move 1
+[22:03:22.119] STOP to_move 1 nodes_visited 521
+[22:03:22.120] START to_move 2
+[22:03:22.147] STOP to_move 2 nodes_visited 483
+[22:03:22.147] START to_move 1
+[22:03:22.178] STOP to_move 1 nodes_visited 513
+[22:03:22.179] START to_move 2
+[22:03:22.205] STOP to_move 2 nodes_visited 473
+[22:03:22.205] START to_move 1
+[22:03:22.236] STOP to_move 1 nodes_visited 498
+[22:03:22.236] START to_move 2
+[22:03:22.263] STOP to_move 2 nodes_visited 475
+[22:03:22.263] START to_move 1
+[22:03:22.312] STOP to_move 1 nodes_visited 787
+[22:03:22.313] START to_move 2
+[22:03:22.359] STOP to_move 2 nodes_visited 793
+[22:03:22.360] START to_move 1
+[22:03:22.433] STOP to_move 1 nodes_visited 1151
+[22:03:22.434] START to_move 2
+[22:03:22.491] STOP to_move 2 nodes_visited 982
+[22:03:22.492] START to_move 1
+[22:03:22.565] STOP to_move 1 nodes_visited 1156
+[22:03:22.566] START to_move 2
+[22:03:22.597] STOP to_move 2 nodes_visited 510
+[22:03:22.598] START to_move 1
+[22:03:22.656] STOP to_move 1 nodes_visited 911
+[22:03:22.656] START to_move 2
+[22:03:22.686] STOP to_move 2 nodes_visited 527
+[22:03:22.686] START to_move 1
+[22:03:22.706] STOP to_move 1 nodes_visited 335
+[22:03:22.707] START to_move 2
+[22:03:22.735] STOP to_move 2 nodes_visited 501
+[22:03:22.735] START to_move 1
+[22:03:22.755] STOP to_move 1 nodes_visited 338
+[22:03:22.755] START to_move 2
+[22:03:22.784] STOP to_move 2 nodes_visited 502
+[22:03:22.784] START to_move 1
+[22:03:22.805] STOP to_move 1 nodes_visited 352
+[22:03:22.805] START to_move 2
+[22:03:22.834] STOP to_move 2 nodes_visited 511
+[22:03:22.834] START to_move 1
+[22:03:22.867] STOP to_move 1 nodes_visited 543
+[22:03:22.867] START to_move 2
+[22:03:22.897] STOP to_move 2 nodes_visited 494
+[22:03:22.897] START to_move 1
+[22:03:22.929] STOP to_move 1 nodes_visited 526
+[22:03:22.929] START to_move 2
+[22:03:22.977] STOP to_move 2 nodes_visited 838
+[22:03:22.978] START to_move 1
+[22:03:23.003] STOP to_move 1 nodes_visited 421
+[22:03:23.004] START to_move 2
+[22:03:23.060] STOP to_move 2 nodes_visited 987
+[22:03:23.060] START to_move 1
+[22:03:23.090] STOP to_move 1 nodes_visited 481
+[22:03:23.090] START to_move 2
+[22:03:23.163] STOP to_move 2 nodes_visited 1224
+[22:03:23.164] START to_move 1
+[22:03:23.191] STOP to_move 1 nodes_visited 445
+[22:03:23.191] START to_move 2
+[22:03:23.269] STOP to_move 2 nodes_visited 1318
+[22:03:23.270] START to_move 1
+[22:03:23.296] STOP to_move 1 nodes_visited 421
+[22:03:23.296] START to_move 2
+[22:03:23.385] STOP to_move 2 nodes_visited 1500
+[22:03:23.386] START to_move 1
+[22:03:23.414] STOP to_move 1 nodes_visited 439
+[22:03:23.414] START to_move 2
+[22:03:23.474] STOP to_move 2 nodes_visited 998
+[22:03:23.475] START to_move 1
+[22:03:23.501] STOP to_move 1 nodes_visited 426
+[22:03:23.501] START to_move 2
+[22:03:23.557] STOP to_move 2 nodes_visited 946
+[22:03:23.557] START to_move 1
+[22:03:23.574] STOP to_move 1 nodes_visited 276
+[22:03:23.574] START to_move 2
+[22:03:23.589] STOP to_move 2 nodes_visited 258
+[22:03:23.589] START to_move 1
+[22:03:23.605] STOP to_move 1 nodes_visited 272
+[22:03:23.605] START to_move 2
+[22:03:23.688] STOP to_move 2 nodes_visited 1428
+[22:03:23.689] START to_move 1
+[22:03:23.706] STOP to_move 1 nodes_visited 234
+[22:03:23.706] START to_move 2
+[22:03:23.792] STOP to_move 2 nodes_visited 1488
+[22:03:23.792] START to_move 1
+[22:03:23.808] STOP to_move 1 nodes_visited 248
+[22:03:23.808] START to_move 2
+[22:03:23.833] STOP to_move 2 nodes_visited 432
+[22:03:23.833] START to_move 1
+[22:03:23.847] STOP to_move 1 nodes_visited 230
+[22:03:23.847] START to_move 2
+[22:03:23.872] STOP to_move 2 nodes_visited 432
+[22:03:23.872] START to_move 1
+[22:03:23.891] STOP to_move 1 nodes_visited 298
+[22:03:23.891] START to_move 2
+[22:03:23.899] STOP to_move 2 nodes_visited 149
+[22:03:23.900] START to_move 1
+[22:03:23.914] STOP to_move 1 nodes_visited 243
+[22:03:23.914] START to_move 2
+[22:03:23.928] STOP to_move 2 nodes_visited 243
+[22:03:23.928] START to_move 1
+[22:03:23.942] STOP to_move 1 nodes_visited 226
+[22:03:23.942] START to_move 2
+[22:03:23.956] STOP to_move 2 nodes_visited 242
+[22:03:23.956] START to_move 1
+[22:03:23.970] STOP to_move 1 nodes_visited 236
+[22:03:23.970] START to_move 2
+[22:03:23.985] STOP to_move 2 nodes_visited 234
+[22:03:23.985] START to_move 1
+[22:03:23.998] STOP to_move 1 nodes_visited 225
+[22:03:23.999] START to_move 2
+[22:03:24.012] STOP to_move 2 nodes_visited 244
+[22:03:24.012] START to_move 1
+[22:03:24.027] STOP to_move 1 nodes_visited 235
+[22:03:24.027] START to_move 2
+[22:03:24.040] STOP to_move 2 nodes_visited 243
+[22:03:24.041] START to_move 1
+[22:03:24.090] STOP to_move 1 nodes_visited 766
+[22:03:24.090] START to_move 2
+[22:03:24.103] STOP to_move 2 nodes_visited 224
+[22:03:24.103] START to_move 1
+[22:03:24.153] STOP to_move 1 nodes_visited 798
+[22:03:24.154] START to_move 2
+[22:03:24.193] STOP to_move 2 nodes_visited 681
+[22:03:24.193] START to_move 1
+[22:03:24.210] STOP to_move 1 nodes_visited 272
+[22:03:24.210] START to_move 2
+[22:03:24.255] STOP to_move 2 nodes_visited 790
+[22:03:24.256] START to_move 1
+[22:03:24.273] STOP to_move 1 nodes_visited 276
+[22:03:24.273] START to_move 2
+[22:03:24.320] STOP to_move 2 nodes_visited 792
+[22:03:24.320] START to_move 1
+[22:03:24.333] STOP to_move 1 nodes_visited 196
+[22:03:24.333] START to_move 2
+[22:03:24.372] STOP to_move 2 nodes_visited 678
+[22:03:24.372] START to_move 1
+[22:03:24.387] STOP to_move 1 nodes_visited 239
+[22:03:24.387] START to_move 2
+[22:03:24.398] STOP to_move 2 nodes_visited 185
+[22:03:24.398] START to_move 1
+[22:03:24.410] STOP to_move 1 nodes_visited 202
+[22:03:24.410] START to_move 2
+[22:03:24.422] STOP to_move 2 nodes_visited 212
+[22:03:24.423] START to_move 1
+[22:03:24.435] STOP to_move 1 nodes_visited 196
+[22:03:24.435] START to_move 2
+[22:03:24.446] STOP to_move 2 nodes_visited 206
+[22:03:24.447] START to_move 1
+[22:03:24.458] STOP to_move 1 nodes_visited 189
+[22:03:24.458] START to_move 2
+[22:03:24.469] STOP to_move 2 nodes_visited 197
+[22:03:24.469] START to_move 1
+[22:03:24.483] STOP to_move 1 nodes_visited 223
+[22:03:24.483] START to_move 2
+[22:03:24.495] STOP to_move 2 nodes_visited 194
+[22:03:24.495] START to_move 1
+[22:03:24.509] STOP to_move 1 nodes_visited 224
+[22:03:24.509] START to_move 2
+[22:03:24.520] STOP to_move 2 nodes_visited 195
+[22:03:24.520] START to_move 1
+[22:03:24.534] STOP to_move 1 nodes_visited 223
+[22:03:24.534] START to_move 2
+[22:03:24.553] STOP to_move 2 nodes_visited 338
+[22:03:24.554] START to_move 1
+[22:03:24.579] STOP to_move 1 nodes_visited 357
+[22:03:24.579] START to_move 2
+[22:03:24.636] STOP to_move 2 nodes_visited 948
+[22:03:24.637] START to_move 1
+[22:03:24.661] STOP to_move 1 nodes_visited 370
+[22:03:24.661] START to_move 2
+[22:03:24.677] STOP to_move 2 nodes_visited 278
+[22:03:24.677] START to_move 1
+[22:03:24.692] STOP to_move 1 nodes_visited 241
+[22:03:24.693] START to_move 2
+[22:03:24.704] STOP to_move 2 nodes_visited 209
+[22:03:24.705] START to_move 1
+[22:03:24.719] STOP to_move 1 nodes_visited 230
+[22:03:24.719] START to_move 2
+[22:03:24.732] STOP to_move 2 nodes_visited 222
+[22:03:24.732] START to_move 1
+[22:03:24.744] STOP to_move 1 nodes_visited 187
+[22:03:24.745] START to_move 2
+[22:03:24.756] STOP to_move 2 nodes_visited 194
+[22:03:24.756] START to_move 1
+[22:03:24.770] STOP to_move 1 nodes_visited 208
+[22:03:24.770] START to_move 2
+[22:03:24.781] STOP to_move 2 nodes_visited 188
+[22:03:24.781] START to_move 1
+[22:03:24.793] STOP to_move 1 nodes_visited 195
+[22:03:24.793] START to_move 2
+[22:03:24.803] STOP to_move 2 nodes_visited 173
+[22:03:24.803] START to_move 1
+[22:03:24.815] STOP to_move 1 nodes_visited 184
+[22:03:24.815] START to_move 2
+[22:03:24.826] STOP to_move 2 nodes_visited 192
+[22:03:24.826] START to_move 1
+[22:03:24.837] STOP to_move 1 nodes_visited 168
+[22:03:24.837] START to_move 2
+[22:03:24.851] STOP to_move 2 nodes_visited 251
+[22:03:24.851] START to_move 1
+[22:03:24.863] STOP to_move 1 nodes_visited 190
+[22:03:24.863] START to_move 2
+[22:03:24.874] STOP to_move 2 nodes_visited 181
+[22:03:24.874] START to_move 1
+[22:03:24.892] STOP to_move 1 nodes_visited 244
+[22:03:24.893] START to_move 2
+[22:03:24.910] STOP to_move 2 nodes_visited 293
+[22:03:24.910] START to_move 1
+[22:03:24.928] STOP to_move 1 nodes_visited 264
+[22:03:24.928] START to_move 2
+[22:03:24.937] STOP to_move 2 nodes_visited 153
+[22:03:24.937] START to_move 1
+[22:03:24.946] STOP to_move 1 nodes_visited 144
+[22:03:24.946] START to_move 2
+[22:03:24.952] STOP to_move 2 nodes_visited 119
+[22:03:24.953] START to_move 1
+[22:03:24.960] STOP to_move 1 nodes_visited 120
+[22:03:24.960] START to_move 2
+[22:03:24.965] STOP to_move 2 nodes_visited 90
+[22:03:24.965] START to_move 1
+[22:03:24.968] STOP to_move 1 nodes_visited 52
+[22:03:24.968] START to_move 2
+[22:03:24.976] STOP to_move 2 nodes_visited 140
+[22:03:24.976] START to_move 1
+[22:03:24.985] STOP to_move 1 nodes_visited 142
+[22:03:24.985] START to_move 2
+[22:03:24.993] STOP to_move 2 nodes_visited 150
+[22:03:24.994] START to_move 1
+[22:03:25.002] STOP to_move 1 nodes_visited 144
+[22:03:25.002] START to_move 2
+[22:03:25.007] STOP to_move 2 nodes_visited 87
+[22:03:25.007] START to_move 1
+[22:03:25.012] STOP to_move 1 nodes_visited 76
+[22:03:25.012] START to_move 2
+[22:03:25.017] STOP to_move 2 nodes_visited 78
+[22:03:25.017] START to_move 1
+[22:03:25.022] STOP to_move 1 nodes_visited 84
+[22:03:25.022] START to_move 2
+[22:03:25.026] STOP to_move 2 nodes_visited 73
+[22:03:25.026] START to_move 1
+[22:03:25.030] STOP to_move 1 nodes_visited 76
+[22:03:25.030] START to_move 2
+[22:03:25.034] STOP to_move 2 nodes_visited 64
+[22:03:25.034] START to_move 1
+[22:03:25.037] STOP to_move 1 nodes_visited 59
+[22:03:25.037] START to_move 2
+[22:03:25.041] STOP to_move 2 nodes_visited 73
+[22:03:25.041] START to_move 1
+[22:03:25.046] STOP to_move 1 nodes_visited 74
+[22:03:25.046] START to_move 2
+[22:03:25.049] STOP to_move 2 nodes_visited 60
+[22:03:25.049] START to_move 1
+[22:03:25.053] STOP to_move 1 nodes_visited 63
+[22:03:25.053] START to_move 2
+[22:03:25.056] STOP to_move 2 nodes_visited 59
+[22:03:25.057] START to_move 1
+[22:03:25.057] STOP to_move 1 nodes_visited 6
+[22:03:25.057] END winner 1 - rounds 333

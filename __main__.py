@@ -1,5 +1,6 @@
 import argparse
 from collections import deque
+import logging
 
 from rich import print
 from typing import Callable, Final
@@ -36,6 +37,13 @@ def _parse_arguments() -> argparse.Namespace:
         required=True,
     )
     parser.add_argument(
+        "-l",
+        "--logging",
+        type=str,
+        help="name of file to save the logs to",
+        required=True,
+    )
+    parser.add_argument(
         "-rl",
         "--rounds-limit",
         type=int,
@@ -58,6 +66,22 @@ def _parse_arguments() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _config_logging(arguments: argparse.Namespace) -> None:
+    logging.basicConfig(
+        filename=arguments.logging,
+        filemode="w",
+        format="[%(asctime)s.%(msecs)03d] %(message)s",
+        datefmt="%H:%M:%S",
+        level=logging.DEBUG
+    )
+    for i in range(1, 3):
+        logging.debug(
+            f"{i} - distance_function {getattr(arguments, f'distance{i}')} - "
+            f"pruning {getattr(arguments, f'prune{i}')}"
+        )
+
+
+
 def main(arguments: argparse.Namespace) -> tuple[str, int]:
     with open(f"positions/pos{arguments.position}.txt") as position_file:
         current_position = PositionNode(
@@ -69,17 +93,23 @@ def main(arguments: argparse.Namespace) -> tuple[str, int]:
     while current_position.winner == "0":
         rounds_count += 1
         to_move = "1" if rounds_count % 2 == 1 else "2"
-        rating: int | float = minimax(
+        distance_function_name: str = getattr(arguments, f"distance{to_move}")
+        pruning: bool = getattr(arguments, f"prune{to_move}")
+        logging.debug(f"START to_move {to_move}")
+        minimax.NODES_VISITED = 0
+        rating = minimax.minimax(
             position=current_position,
             to_move=to_move,
-            distance_function=DISTANCE_FUNCTION_MAPPING[
-                getattr(arguments, f"distance{to_move}")
-            ],
+            distance_function=DISTANCE_FUNCTION_MAPPING[distance_function_name],
             depth=0,
             max_depth=arguments.max_depth,
-            pruning=getattr(arguments, f"prune{to_move}"),
+            pruning=pruning,
         )
-        current_position = current_position.find_child_with_rating(rating)
+        logging.debug(f"STOP to_move {to_move} nodes_visited {minimax.NODES_VISITED}")
+        try:
+            current_position = current_position.find_child_with_rating(rating)
+        except StopIteration:
+            return "0", rounds_count
         if arguments.verbose:
             print(current_position.as_table)
             winning = (
@@ -107,8 +137,11 @@ def main(arguments: argparse.Namespace) -> tuple[str, int]:
 
 if __name__ == "__main__":
     positional_arguments: argparse.Namespace = _parse_arguments()
+    _config_logging(positional_arguments)
     winner, rounds = main(positional_arguments)
+    logging.debug(f"END winner {winner} - rounds {rounds}")
     if winner == "0":
         print(f"[cyan]Draw after {rounds} rounds.")
     else:
         print(f"[cyan]Player {winner} won after {rounds} rounds.")
+
