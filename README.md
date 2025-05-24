@@ -1,6 +1,6 @@
 # Minimax implementation in halma
 
-This project was creating for simulating halma games between two bots using minimax algorithm.
+Simulating halma games between two bots using minimax algorithm.
 User can observe games with different parameters and collect logs for results analysis.
 
 ## What is halma?
